@@ -7,7 +7,7 @@ app = FastAPI()
 async def pong(settings: Settings =
 Depends(get_settings)):
     return {
-        "ping": "pong!",
+        "ping": "pong! test commit",
         "environnement": settings.environment,
         "testing": settings.testing
 
